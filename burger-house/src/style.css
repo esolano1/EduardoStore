@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Tokens (colores, fuente, radios) */
+@theme {
+  --color-primary: #f48525;
+  --color-background-light: #f8f7f5;
+  --color-background-dark: #221810;
+
+  --font-display: "Epilogue", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+  /* radios opcionales si los usarás como tokens */
+  --radius: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+

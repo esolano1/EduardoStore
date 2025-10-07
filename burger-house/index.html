@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+<link rel="stylesheet" href="/src/styles.css">
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Burger House</title>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f48525",
+              "background-light": "#f8f7f5",
+              "background-dark": "#221810",
+            },
+            fontFamily: {
+              display: ["Epilogue"],
+            },
+            borderRadius: { DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<style>
+      .bg-hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3jW4AmplQfV8j3IjR4AfI9-uX-n5UuENY6a90juXiMOv6HJbN5hQTKzk1GM_t3bqhXk6VYvLaqdwFYQQTbZR_TkDsgbCFKyUFkjomxXgxTw6SAgT3KdKhmrpcwZFjfNqdW1ZFYXBVFjax_NjQpf_2nwJ_KENYgoNjtrf0yUU3xPxKgTY9g8kcJ5Z9O7dNJfyrbg6kRZzH_JtvujsymO7A93lWpSWy_0syDFMrZM5CCBFG4QnbswiTDMltMmN4NNg5cpDf95IrWw0");
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-neutral-800 dark:text-neutral-200">
+<div class="min-h-screen">
+<header class="border-b border-primary/20 dark:border-primary/10">
+<div class="container mx-auto flex h-20 items-center justify-between px-4">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_319">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold text-neutral-900 dark:text-white">Burger House</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Menu</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Locations</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Catering</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden rounded-full bg-primary/20 px-5 py-2.5 text-sm font-bold text-primary transition-colors hover:bg-primary/30 sm:block">Sign In</button>
+<button class="rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-white transition-transform hover:scale-105">Order Now</button>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 py-12 sm:py-16 md:py-24">
+<section class="relative mb-24 flex min-h-[600px] items-center justify-center rounded-xl bg-hero bg-cover bg-center p-8 text-center text-white">
+<div class="z-10 flex flex-col items-center gap-8">
+<h1 class="text-6xl font-black md:text-8xl">Burger Bliss</h1>
+<p class="max-w-2xl text-xl font-light">The best burgers in town, made with fresh ingredients and a whole lot of love.</p>
+<button class="mt-6 rounded-full bg-primary px-10 py-5 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105">Order Now</button>
+</div>
+</section>
+<section class="mb-24">
+<h2 class="mb-12 text-center text-5xl font-bold text-neutral-900 dark:text-white">Our Menu</h2>
+<div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:gap-8 lg:grid-cols-6">
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCM00YOwzvAYG_B5aoeyWrdkMAJBxMplZ7QyvAQErtz3Xw7y-_VoNAq7l5LT0pLoehImo2n5TX2Iu1pMFSfYywqjQG4Hr_w59tFwlbYzmtlWT7fVYS4cG0Q8RfRxpeh_NuyUebzAcB27eZ0SOEvnzFRSROsBROAtVE8tlJ06YoGLRKjcV6LagXdWZ46MDbjZKdr8WjVNS_b073uIrPmBchVmu6jYP-r-bTcvBAT5Dz6BRxEgV75LqIIed2_JOuvBDDBV6PXKKjnYY');"></div>
+</div>
+<p class="mt-4 text-center text-xl font-semibold text-neutral-900 dark:text-white">Burgers</p>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsDGRHG4MOQRj17n8LEZmdbEN58fpmhJyq5JNgFQhPyelzPqO1QeI2yxv5Pgc9wBD80l7NdIPVBeHIO5nJTlLCaV9Sok2yonA7OnQu0Q1m6aMsCTUaKTyHKe6xSomGoweSVDvLQrEWXWis02sSyRFkU_VyfmQthrp1btZ0MHlUYolkiXRLoo2lha8nZSexTkpVlNi9c4AJu27ovOw1D1M9rbuWV7oDwu2wWx5xoKnCRSbMc3-2MHzYnir7F7fdmY_xczs8ZUlK9WQ');"></div>
+</div>
+<p class="mt-4 text-center text-xl font-semibold text-neutral-900 dark:text-white">Fries</p>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANmyUAA9yV44rLo41AWXm1DECrBfCQGeFDGy2zXR2CWdgHbg0UB_PC3nz4QrSXs5Uup8Ac3VnlKUYOgkfq8oRMY64kPQYsX6GIZ7lOih92KeZVqwrkNgkyah0JL6rp6kflQ4C8eGjwAc_-iGVtBp_cKeu5PlxeyIvecdhjL2BJeRKMwgXWrj-NTq5Q27SB0qfQpcT6dHV1FLbv0MbrTG3oTwglPmlfzyflDXB2NikXxseP29vSRqzh71x4kpQGqeXjfcunOsJV5Hw');"></div>
+</div>
+<p class="mt-4 text-center text-xl font-semibold text-neutral-900 dark:text-white">Hot Dogs</p>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5Zc8irnCMOziVtp8zBXBf7mqf-Bg-sv6CB4qfzfh6eGy1reTZImSMGmyDZcaPtv3HWlMrqqU6u9KVcjLEu7eGe3Qb5Bu9UIuGBQP8eZrS0TXTUFD3oMv2tGDzfsD-X0BrFnwuagHDKbVkFsjFtBAKECGpd19-oXVxkahfJRYuohChEVIXtw643Iqo-FUUA2jNtVQ2QPtLcdfjShFzboJfdSJTK-WEHlITExUospBP1OmtlQIzYknkH0zShGhUKrk0pZyghpyxP0E');"></div>
+</div>
+<p class="mt-4 text-center text-xl font-semibold text-neutral-900 dark:text-white">Milkshakes</p>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3iXXxksmsnrlOeb0HjEFkLaUkz_zIWjqgbMQL_uWCBk0iaMaczeNbAvSShEco5ReLxjmdbycni-av-LDFWCuH_Vn7eI1ZTZ4xu3WEB9Ww-fpiJsGUMyO1Y1ksiFedDf84YDIPddDGl1k1ZUg1dtEi-haSUxHdt0xxumEWG-ZYbXRqY2TeahQ-MXY8NbuKMePyn2zIBG51l2z22tS1rHZ_PV0vaTSaH10LVrsWIvnbbf1oYw-3RH9lGuOmWsacSbfTjZER_WsCb1k');"></div>
+</div>
+<p class="mt-4 text-center text-xl font-semibold text-neutral-900 dark:text-white">Drinks</p>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmVUuJZYL_0SKPRD2XfNEc30ZeUE1ThEfNmt97ANt4nroZld7PhcasjLPZZ7lIG61GFotyzCQswHA1-ikWdbUYIS7KRBdUruLGAK0pnp-YlrB4R3zfjKLyeg_PhaZwBsZJ0SBrIM1G7lMfgmKCHztPt-SFtp9v7Gz9JeDYm1LEMwN4ZnEuXj8ejVHxbpsXrgM4Wn4u1XivPIgUKT7f-sO6bP7T_zJoF-_UKnhVmoWsB9msj3CdTudo0SDAB9gZHZolTooQMj8W44o');"></div>
+</div>
+<p class="mt-4 text-center text-xl font-semibold text-neutral-900 dark:text-white">Snacks</p>
+</a>
+</div>
+</section>
+<section class="mb-24 rounded-xl bg-primary/10 p-16 dark:bg-primary/20">
+<h2 class="mb-8 text-center text-5xl font-bold text-neutral-900 dark:text-white">Ofertas del Día</h2>
+<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col items-center gap-4 rounded-lg bg-background-light p-6 text-center dark:bg-background-dark">
+<div class="h-56 w-full overflow-hidden rounded-lg">
+<img alt="Combo Clásico" class="h-full w-full object-cover transition-transform duration-300 hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCM00YOwzvAYG_B5aoeyWrdkMAJBxMplZ7QyvAQErtz3Xw7y-_VoNAq7l5LT0pLoehImo2n5TX2Iu1pMFSfYywqjQG4Hr_w59tFwlbYzmtlWT7fVYS4cG0Q8RfRxpeh_NuyUebzAcB27eZ0SOEvnzFRSROsBROAtVE8tlJ06YoGLRKjcV6LagXdWZ46MDbjZKdr8WjVNS_b073uIrPmBchVmu6jYP-r-bTcvBAT5Dz6BRxEgV75LqIIed2_JOuvBDDBV6PXKKjnYY"/>
+</div>
+<h3 class="text-2xl font-bold text-neutral-900 dark:text-white">Combo Clásico</h3>
+<p class="text-neutral-700 dark:text-neutral-300">Nuestra hamburguesa clásica con papas y refresco.</p>
+<span class="text-2xl font-bold text-primary">$9.99</span>
+<button class="mt-2 w-full rounded-full bg-primary px-6 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">Ordenar</button>
+</div>
+<div class="flex flex-col items-center gap-4 rounded-lg bg-background-light p-6 text-center dark:bg-background-dark">
+<div class="h-56 w-full overflow-hidden rounded-lg">
+<img alt="Dúo de Hot Dogs" class="h-full w-full object-cover transition-transform duration-300 hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANmyUAA9yV44rLo41AWXm1DECrBfCQGeFDGy2zXR2CWdgHbg0UB_PC3nz4QrSXs5Uup8Ac3VnlKUYOgkfq8oRMY64kPQYsX6GIZ7lOih92KeZVqwrkNgkyah0JL6rp6kflQ4C8eGjwAc_-iGVtBp_cKeu5PlxeyIvecdhjL2BJeRKMwgXWrj-NTq5Q27SB0qfQpcT6dHV1FLbv0MbrTG3oTwglPmlfzyflDXB2NikXxseP29vSRqzh71x4kpQGqeXjfcunOsJV5Hw"/>
+</div>
+<h3 class="text-2xl font-bold text-neutral-900 dark:text-white">Dúo de Hot Dogs</h3>
+<p class="text-neutral-700 dark:text-neutral-300">Dos hot dogs con tus toppings favoritos y una bebida.</p>
+<span class="text-2xl font-bold text-primary">$8.49</span>
+<button class="mt-2 w-full rounded-full bg-primary px-6 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">Ordenar</button>
+</div>
+<div class="flex flex-col items-center gap-4 rounded-lg bg-background-light p-6 text-center dark:bg-background-dark md:col-span-2 lg:col-span-1">
+<div class="h-56 w-full overflow-hidden rounded-lg">
+<img alt="Malteada del Día" class="h-full w-full object-cover transition-transform duration-300 hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Zc8irnCMOziVtp8zBXBf7mqf-Bg-sv6CB4qfzfh6eGy1reTZImSMGmyDZcaPtv3HWlMrqqU6u9KVcjLEu7eGe3Qb5Bu9UIuGBQP8eZrS0TXTUFD3oMv2tGDzfsD-X0BrFnwuagHDKbVkFsjFtBAKECGpd19-oXVxkahfJRYuohChEVIXtw643Iqo-FUUA2jNtVQ2QPtLcdfjShFzboJfdSJTK-WEHlITExUospBP1OmtlQIzYknkH0zShGhUKrk0pZyghpyxP0E"/>
+</div>
+<h3 class="text-2xl font-bold text-neutral-900 dark:text-white">Malteada del Día</h3>
+<p class="text-neutral-700 dark:text-neutral-300">Pregunta por nuestro sabor especial de malteada hoy.</p>
+<span class="text-2xl font-bold text-primary">$4.99</span>
+<button class="mt-2 w-full rounded-full bg-primary px-6 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">Ordenar</button>
+</div>
+</div>
+</section>
+<section class="mb-24 rounded-xl bg-primary/10 p-16 text-center dark:bg-primary/20">
+<h2 class="mb-6 text-5xl font-bold text-neutral-900 dark:text-white">Find a Location Near You</h2>
+<p class="mx-auto mb-10 max-w-3xl text-xl text-neutral-700 dark:text-neutral-300">Craving a Burger Bliss? Find your nearest restaurant and get ready for a treat.</p>
+<button class="rounded-full bg-primary px-10 py-5 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105">View Locations</button>
+</section>
+<section class="rounded-xl bg-primary/10 p-16 text-center dark:bg-primary/20">
+<h2 class="mb-6 text-5xl font-bold text-neutral-900 dark:text-white">Catering for Your Event</h2>
+<p class="mx-auto mb-10 max-w-3xl text-xl text-neutral-700 dark:text-neutral-300">Make your next event a hit with Burger Bliss catering. Delicious food your guests will love.</p>
+<button class="rounded-full bg-primary px-10 py-5 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105">Learn More</button>
+</section>
+</main>
+<footer class="border-t border-primary/20 py-12 dark:border-primary/10">
+<div class="container mx-auto px-4 text-center text-neutral-600 dark:text-neutral-400">
+<div class="mb-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+<a class="text-sm hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-sm hover:text-primary" href="#">Terms of Service</a>
+<a class="text-sm hover:text-primary" href="#">Contact Us</a>
+</div>
+<p class="text-sm">© 2024 Burger Bliss. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>
