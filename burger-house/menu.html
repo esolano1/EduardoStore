@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menú | Tu Antojo</title>
+  <link rel="stylesheet" href="/src/style.css" />
+
+
+
+</head>
+<body class="bg-background-light font-display text-neutral-900">
+  <header class="container mx-auto px-4 py-6">
+    <a href="index.html" class="text-primary font-bold">&larr; Inicio</a>
+    <h1 id="title" class="mt-4 mb-6 text-4xl font-extrabold">Menú</h1>
+  </header>
+
+  <main class="container mx-auto px-4 pb-16">
+    <nav id="cat-nav" class="mb-8 flex flex-wrap gap-3"></nav>
+
+    <template id="card-template">
+      <a class="group rounded-xl overflow-hidden shadow-sm bg-white hover:shadow-md transition">
+        <img class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold name"></h3>
+          <p class="text-primary font-bold price mt-1"></p>
+          <div class="mt-3">
+            <button class="rounded-full bg-primary px-4 py-2 text-white text-sm add-btn">Agregar</button>
+          </div>
+        </div>
+      </a>
+    </template>
+
+    <div id="grid" class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mb-12"></div>
+
+    <div class="mt-10 mb-10 text-center">
+      <button id="checkout" class="rounded-full bg-primary px-6 py-3 text-white font-bold">
+        Enviar pedido por WhatsApp
+      </button>
+    </div>
+  </main>
+
+  <script type="module" src="/src/js/menu.js"></script>
+</body>
+</html>
