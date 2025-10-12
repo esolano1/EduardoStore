@@ -1,4 +1,4 @@
-import{p,a as v,t as f,g as y}from"./cart-COJ-hvxc.js";/* empty css              */const o=a=>document.querySelector(a),l=a=>`$${a}`,g="+52 55 1234 5678",$=new URLSearchParams(location.search),u=$.get("id"),i=o("#product"),w=o("#related"),k=o("#backToCat"),t=p.find(a=>a.id===u);if(!t)i.innerHTML=`
+import{p,a as v,t as f,g as y}from"./cart-DE9nLIwq.js";/* empty css              */const o=a=>document.querySelector(a),l=a=>`$${a}`,g="+52 55 1234 5678",$=new URLSearchParams(location.search),u=$.get("id"),i=o("#product"),w=o("#related"),k=o("#backToCat"),t=p.find(a=>a.id===u);if(!t)i.innerHTML=`
     <div class="md:col-span-2 text-center py-20">
       <h1 class="text-3xl font-extrabold">Producto no encontrado</h1>
       <p class="mt-2 text-neutral-600">No existe un producto con id <code class="px-1.5 py-0.5 rounded bg-neutral-100">${u}</code></p>
