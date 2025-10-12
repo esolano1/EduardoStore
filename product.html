@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Detalle del producto | Tu Antojo</title>
+  <link rel="icon" href="/EduardoStore/favicon.ico" />
+  <!-- Usa tu CSS compilado por Vite/Tailwind -->
+  <script type="module" crossorigin src="/EduardoStore/assets/product-D_9v5TzI.js"></script>
+  <link rel="modulepreload" crossorigin href="/EduardoStore/assets/cart-COJ-hvxc.js">
+  <link rel="stylesheet" crossorigin href="/EduardoStore/assets/style-D3_YNmnQ.css">
+</head>
+
+<body class="bg-background-light font-display text-neutral-900">
+  <header class="container mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="./index.html" class="text-primary font-semibold hover:underline">&larr; Inicio</a>
+    <a id="backToCat" href="./menu.html" class="text-sm text-neutral-600 hover:text-primary">Volver al menú</a>
+  </header>
+
+  <main class="container mx-auto px-4 pb-24">
+    <!-- Contenido dinámico -->
+    <div id="product" class="grid gap-10 md:grid-cols-2 mb-32"></div>
+
+    <!-- Relacionados -->
+    <section class="mt-32">
+      <h2 class="text-2xl font-bold mb-6">También te puede gustar</h2>
+      <div id="related" class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4"></div>
+    </section>
+  </main>
+
+</body>
+</html>
