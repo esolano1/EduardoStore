@@ -13,7 +13,6 @@ import{p,a as v,t as f,g as y}from"./cart-DE9nLIwq.js";/* empty css             
     <div>
       <h1 class="text-4xl font-extrabold">${t.name}</h1>
       <p class="mt-2 text-primary text-3xl font-black" id="price">${l(t.price)}</p>
-
       ${t.desc?`
         <p class="mt-4 text-neutral-700">${t.desc}</p>
       `:""}
