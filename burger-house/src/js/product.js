@@ -16,7 +16,7 @@ const backToCat = $('#backToCat')
 
 const product = products.find(p => p.id === id)
 
-// Si no hay producto → 404 simple
+// Si no hay producto → 404
 if (!product) {
   container.innerHTML = `
     <div class="md:col-span-2 text-center py-20">

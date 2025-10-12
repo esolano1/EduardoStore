@@ -19,7 +19,11 @@ const grid  = document.querySelector('#grid')
 const tpl   = document.querySelector('#card-template')
 const nav   = document.querySelector('#cat-nav')
 
-// nav de categorías
+const select = document.createElement('select')
+select.className = 'border border-primary/30 rounded-full px-4 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary'
+
+/*
+// nav de categorías sin select
 CATS.forEach(c => {
   const a = document.createElement('a')
   a.href = c.key === 'all' ? 'menu.html' : `menu.html?cat=${c.key}`
@@ -28,6 +32,28 @@ CATS.forEach(c => {
     ${c.key === cat ? 'bg-primary text-white border-primary' : 'border-primary/30 hover:bg-primary/10'}`
   nav.appendChild(a)
 })
+*/
+
+// nav de categorías con select
+CATS.forEach(c => {
+  const option = document.createElement('option')
+  option.value = c.key
+  option.textContent = c.label
+  if (c.key === cat) option.selected = true
+  select.appendChild(option)
+})
+
+// Insertar el select al nav
+nav.appendChild(select)
+
+// Detectar cambio de categoría
+select.addEventListener('change', (e) => {
+  const value = e.target.value
+  const url = value === 'all' ? 'menu.html' : `menu.html?cat=${value}`
+  location.href = url
+})
+
+
 
 // título dinámico
 const current = CATS.find(c => c.key === cat) || CATS[0]

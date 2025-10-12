@@ -25,6 +25,6 @@ export function toWhatsAppLink(phone, cart) {
   if (!cart.length) return `https://wa.me/${digits}`;
   const lines = cart.map(it => `• ${it.name} x${it.qty} — $${it.price * it.qty}`);
   const total = cart.reduce((s, it) => s + it.price * it.qty, 0);
-  const msg = `Hola! Quiero ordenar:\n${lines.join('\n')}\n\nTotal: $${total}`;
+  const msg = `!Hola! Quiero ordenar:\n${lines.join('\n')}\n\nTotal: $${total}`;
   return `https://wa.me/${digits}?text=${encodeURIComponent(msg)}`;
 }
