@@ -8,6 +8,7 @@ export default defineConfig({
         main: 'index.html',
         menu: 'menu.html',
         product: 'product.html',
+        location: 'ubicacion.html',
       },
     },
   },
